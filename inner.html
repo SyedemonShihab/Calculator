@@ -12,7 +12,6 @@
   <body>
     <header>
       <h2>Hey There!</h2>
-      <p>This calculator project made by Emon Shihab</p>
     </header>
     <main>
       <form action="">
@@ -22,34 +21,34 @@
           </div>
 
           <div>
-            <input class="ce" type="button" value="C" />
-            <input type="button" value="(" />
-            <input type="button" value=")" />
-            <input class="math" type="button" value="/" />
+            <input class="ce" type="button" value="C" onclick="deleteValue()" />
+            <input type="button" value="(" onclick="calculator(this.value)" />
+            <input type="button" value=")" onclick="calculator(this.value)" />
+            <input class="math" type="button" value="/" onclick="calculator(this.value)" />
           </div>
           <div>
-            <input class="numbers" type="button" value="7" />
-            <input class="numbers" type="button" value="8" />
-            <input class="numbers" type="button" value="9" />
-            <input class="math" type="button" value="*" />
+            <input class="numbers" type="button" value="7" onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="8" onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="9" onclick="calculator(this.value)" />
+            <input class="math" type="button" value="*" onclick="calculator(this.value)" />
           </div>
           <div>
-            <input class="numbers" type="button" value="4" />
-            <input class="numbers" type="button" value="5" />
-            <input class="numbers" type="button" value="6" />
-            <input class="math"  type="button" value="-" />
+            <input class="numbers" type="button" value="4"  onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="5" onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="6" onclick="calculator(this.value)" />
+            <input class="math"  type="button" value="-" onclick="calculator(this.value)" />
           </div>
           <div>
-            <input class="numbers" type="button" value="1" />
-            <input class="numbers" type="button" value="2" />
-            <input class="numbers" type="button" value="3" />
-            <input class="math" type="button" value="+" />
+            <input class="numbers" type="button" value="1" onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="2" onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="3" onclick="calculator(this.value)" />
+            <input class="math" type="button" value="+" onclick="calculator(this.value)" />
           </div>
           <div>
-            <input class="numbers" type="button" value="0" />
-            <input class="numbers" type="button" value="." />
-            <input class="numbers" type="button" value="%" />
-            <input class="ce" type="button" value="=" />
+            <input class="numbers" type="button" value="0" onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="." onclick="calculator(this.value)" />
+            <input class="numbers" type="button" value="%" onclick="calculator(this.value)" />
+            <input class="ce" type="button" value="=" onclick="sum()"/>
           </div>
         </div>
       </form>
